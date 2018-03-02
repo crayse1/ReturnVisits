@@ -5,7 +5,7 @@ Module modSQL
 
 
 
-    Public Function sqlCMD(ByVal cmdText As String)
+    Public Function SqlCMD(ByVal cmdText As String)
         Dim con As New SqlConnection(ConfigurationManager.ConnectionStrings("RV").ConnectionString)
         Dim returncommand As String = ""
         Using con

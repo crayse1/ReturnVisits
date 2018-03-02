@@ -234,8 +234,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\RV.png" />
-    <Content Include="pages\door2door.aspx" />
-    <Content Include="pages\info.aspx" />
+    <Content Include="Application\door2door.aspx" />
+    <Content Include="Application\info.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
@@ -401,6 +401,7 @@
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="App_Code\modProfile.vb" />
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\IdentityConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
@@ -451,17 +452,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="pages\door2door.aspx.designer.vb">
+    <Compile Include="Application\door2door.aspx.designer.vb">
       <DependentUpon>door2door.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\door2door.aspx.vb">
+    <Compile Include="Application\door2door.aspx.vb">
       <DependentUpon>door2door.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="pages\info.aspx.designer.vb">
+    <Compile Include="Application\info.aspx.designer.vb">
       <DependentUpon>info.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\info.aspx.vb">
+    <Compile Include="Application\info.aspx.vb">
       <DependentUpon>info.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>

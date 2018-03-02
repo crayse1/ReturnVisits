@@ -46,6 +46,15 @@ Public Class SiteMaster
     End Sub
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If My.User.IsAuthenticated = True Then
+
+            If userProfile.CheckProfileExist(My.User.Name) = False Then
+                userProfile.addNewUser(My.User.Name)
+            End If
+
+
+        End If
+
 
     End Sub
 
