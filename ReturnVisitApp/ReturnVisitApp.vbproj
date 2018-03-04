@@ -236,6 +236,7 @@
     <Content Include="Images\RV.png" />
     <Content Include="Application\door2door.aspx" />
     <Content Include="Application\info.aspx" />
+    <Content Include="rv.sql" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
