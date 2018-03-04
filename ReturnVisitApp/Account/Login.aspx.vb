@@ -9,7 +9,7 @@ Imports Owin
 Partial Public Class Login
     Inherits Page
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        RegisterHyperLink.NavigateUrl = "Register"
+        RegisterHyperLink.NavigateUrl = "Register.aspx"
         ' Enable this once you have account confirmation enabled for password reset functionality
         ' ForgotPasswordHyperLink.NavigateUrl = "Forgot"
         OpenAuthLogin.ReturnUrl = Request.QueryString("ReturnUrl")
@@ -34,10 +34,10 @@ Partial Public Class Login
                     IdentityHelper.RedirectToReturnUrl(Request.QueryString("ReturnUrl"), Response)
                     Exit Select
                 Case SignInStatus.LockedOut
-                    Response.Redirect("/Account/Lockout")
+                    Response.Redirect("/Account/Lockout.aspx")
                     Exit Select
                 Case SignInStatus.RequiresVerification
-                    Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}",
+                    Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn.aspx?ReturnUrl={0}&RememberMe={1}",
                                                     Request.QueryString("ReturnUrl"),
                                                     RememberMe.Checked),
                                       True)
