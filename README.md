@@ -1,0 +1,3 @@
+# ReturnVisits
+
+I created this website to help congregations manage their Return Visit data in a more efficient way. This application was designed to be cloud based with consideration about the privacy of the householder. I was looking to design encryption around each set of records. Much like a social network the data would be shared on a permission based system. Also, to better record emergency info and better tools for the infirmed. Sadly, life took a turn for me and it so I had to abandon this work. Though I felt it would have benefited the organization my current situation leaves me discouraged to continue. 
